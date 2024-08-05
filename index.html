@@ -1,30 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewort" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Personal Portfolio Webpage</title>
-  </head>
-  <body>
-    <nav id="navbar">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Project</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <section id="welcome-section">
-      <h1>Hey I am Usman</h1>
-      <p>a web developer<p>
-    </section>
-    <section id="projects">
-      <div class="project">
-      <h3 class="project-tile">My project<h3>
-      </div>
-    </section>
-    <section id="contact">
-      <a id="profile-link" target="_blank"></a>
-    </section>
-  </body>
+    <head>
+        <title>My CSS Website</title>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+
+        <nav>
+            <ul class="topnav" id="dropdownclick">
+                <li><a class="active" href="#home">Home</a></li>
+                <li class="topnav_right"><a href="#contact">Contact</a></li>
+                <li class="topnav_right"><a href="#about">About</a></li>
+                <li class="topnav_right"><a href="#projects">Project</a></li>
+                <li class="dropdown"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav> 
+        <section id="about">
+            <h1>Hey I am Usman</h1>
+            <p>I am a we developer</p>
+        </section>
+        <section id="projects">
+            <h2>These are some of my projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <a href="https://rock-papper-scissors-woad.vercel.app/">
+                        <img alt="project" src="Image/rrs.png" width="400px" height="400px">
+                    </a>
+                    <a href="https://rock-papper-scissors-woad.vercel.app/">
+                        <p>
+                           Rock Paper Scissors 
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Let's work together...</h2>
+            
+        </section>
+
+             
+
+
+        <script src="script.js"></script>
+    </body>
 </html>
