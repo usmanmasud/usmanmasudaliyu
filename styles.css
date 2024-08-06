@@ -4,7 +4,6 @@ nav, header, footer {
     display: block;
 }
 body{
-    line-height: 1; 
     margin: 0;
     box-sizing: border-box;
 }
@@ -12,15 +11,16 @@ body{
 /* NAVIGATION BAR */
 
 nav {
-    width: 100;
+    width: 100%;
     margin: 0;
+    position: fixed;
 }
 
 nav ul {
-    background-color: #eee;
+    background-color: rgb(185, 34, 34);
     overflow: hidden;
     margin: 0;
-    padding: 10px;
+    padding: 1%;
 }
 
 ul.topnav li{
@@ -40,7 +40,7 @@ ul.topnav li a{
     text-align: center;
     padding: 14px;
     text-transform: uppercase;
-    color: #666;
+    color: white;
     font-weight: bold;
 }
 
@@ -55,7 +55,7 @@ ul.topnav li.dropdown{
 /* ############ About ###################*/
 
 #about {
-    background-color: #000;
+    background-color: #2b2323;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -67,19 +67,29 @@ ul.topnav li.dropdown{
 
 #about h1{
     color: #F0F0F0;
-    font-size: 42px;
-}
-
-#about p {
-    color: #F0F0F0;
-    padding: 0;
+    font-size: 46px;
     margin: 0;
 }
 
+#about p {
+    font-size: 35px;
+    font-style: italic;
+    color:rgb(185, 34, 34);
+    margin: 7px;
+}
+
 #projects {
-    background-color: #45567d;
+    background-color: #0b152b;
     text-align: center;
     padding: 20px;
+}
+
+#projects h2{
+    color: #F0F0F0;
+    font-size: 32px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    padding:  20px;
 }
 
 .projects {
@@ -91,13 +101,19 @@ ul.topnav li.dropdown{
 }
 
 .project {
-    background-color: rgb(3, 3, 14);
+    background-color: #666;
     color: #F0F0F0;
     margin: 0;
     font-weight: bold;
     font-size: 25px;
     width: 400px;
     font-style: italic;
+    text-decoration: n;
+}
+
+.project a {
+    text-decoration: none;
+    color: #F0F0F0;
 }
 
 #contact {
@@ -105,7 +121,7 @@ ul.topnav li.dropdown{
     padding: 85px;
     text-align: center;
     color: #eee;
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid rgb(185, 34, 34);
 }
 
 #contact h2 {
