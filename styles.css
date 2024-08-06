@@ -83,40 +83,61 @@ ul.topnav li.dropdown{
 }
 
 .projects {
-    display: flex;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 25px;
+    padding: 20px;
 }
 
-.project     {
+.project {
     background-color: rgb(3, 3, 14);
     color: #F0F0F0;
     margin: 0;
     font-weight: bold;
     font-size: 25px;
+    width: 400px;
 }
 
 #contact {
     background-color: #666;
-    padding: 20px;
+    padding: 85px;
     text-align: center;
     color: #eee;
+    border-bottom: 3px solid red;
 }
 
 #contact h2 {
-    font-size: 42px;
+    font-size: 60px;
+    padding: 10px;
 }
 
 .icon-container {
     display: flex;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
 }
 .icon-container a {
     text-decoration: none;
-    color: #000;
+    color: white;
     font-size: 24px;
     transition: color 0.3s;
 }
 .icon-container a:hover {
     color: #007bff;
+}
+
+footer {
+    background-color: #666;
+    padding: 20px;
+}
+
+footer p {
+    text-align: center;
+    color: #F0F0F0;
+    font-size: 20px;
 }
 
 /* ############# Mobile ################# */
