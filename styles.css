@@ -82,6 +82,7 @@ ul.topnav li.dropdown{
     background-color: #0b152b;
     text-align: center;
     padding: 20px;
+    width: 100%;
 }
 
 #projects h2{
