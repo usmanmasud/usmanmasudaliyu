@@ -2,6 +2,7 @@
 
 nav, header, footer {
     display: block;
+    text-align: center;
 }
 body{
     margin: 0;
@@ -64,6 +65,8 @@ ul.topnav li.dropdown{
     align-items: center;
     text-align: center;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 
 #about h1{
@@ -95,10 +98,11 @@ ul.topnav li.dropdown{
 }
 
 .projects {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
     padding: 20px;
 }
 
@@ -118,17 +122,18 @@ ul.topnav li.dropdown{
 }
 
 #contact {
-    width: 100%;
     background-color: #666;
-    padding: 85px;
     text-align: center;
     color: #eee;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     border-bottom: 3px solid rgb(185, 34, 34);
+    margin: 0;
 }
 
 #contact h2 {
     font-size: 60px;
-    padding: 10px;
 }
 
 .icon-container {
@@ -136,7 +141,7 @@ ul.topnav li.dropdown{
     gap: 20px;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
 }
 .icon-container a {
     text-decoration: none;
@@ -161,7 +166,14 @@ footer p {
 }
 
 /* ############# Mobile ################# */
-@media screen and (max-width: 680px) {
+
+@media only screen and (max-width: 510px) {
+    
+}
+
+
+
+@media only screen and (max-width: 680px) {
     ul.topnav li:not(:nth-child(1)) {
         display: none;
     }
@@ -174,7 +186,7 @@ ul.topnav li.dropdown {
 ul.topnav.responsive li.dropdown{
     position: absolute;
     top: 0;
-    right: 0;   
+    right: 0;
 }
 
 ul.topnav.responsive {
@@ -190,22 +202,6 @@ ul.topnav.responsive li{
 ul.topnav.responsive li a {
     display: block;
     text-align: left;
-}
- 
-.projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.project img {
-    width: 550px;
-}
-
-.project {
-    width: 550px;
 }
 
 .icon-container {
@@ -229,7 +225,4 @@ ul.topnav.responsive li a {
     font-size: 30px;
 }
 
-#about {
-    height: 90vh;
-}
 }   
