@@ -1,25 +1,17 @@
-/* DEFAULTS */
-
-nav, header, footer {
-    display: block;
-    text-align: center;
-}
 body{
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    width: 100%;
 }
 
-/* NAVIGATION BAR */
-
 nav {
-    width: 100%;
     margin: 0;
     position: fixed;
+    width: 100%;
+    background-color: rgb(185, 34, 34);
 }
 
 nav ul {
-    background-color: rgb(185, 34, 34);
     overflow: hidden;
     margin: 0;
     padding: 1%;
@@ -54,7 +46,6 @@ ul.topnav li a:hover {
 ul.topnav li.dropdown{
     display: none;
 }
-/* ############ About ###################*/
 
 #about {
     background-color: #2b2323;
@@ -83,8 +74,9 @@ ul.topnav li.dropdown{
 #projects {
     background-color: #0b152b;
     text-align: center;
-    padding: 20px;
+    padding: 0px;
     width: 100%;
+    margin: 0;
 }
 
 #projects h2{
@@ -92,7 +84,8 @@ ul.topnav li.dropdown{
     font-size: 32px;
     text-decoration: underline;
     text-transform: uppercase;
-    padding:  20px;
+    margin: 0;
+    padding: 40px;
 }
 
 .projects {
@@ -110,7 +103,7 @@ ul.topnav li.dropdown{
     margin: 0;
     font-weight: bold;
     font-size: 25px;
-    width: 400px;
+    width: 350px;
     font-style: italic;
 }
 
@@ -127,6 +120,7 @@ ul.topnav li.dropdown{
     width: 100%;
     flex-direction: column;
     border-bottom: 3px solid rgb(185, 34, 34);
+    padding: 0;
     margin: 0;
 }
 
@@ -152,7 +146,6 @@ ul.topnav li.dropdown{
 }
 
 footer {
-    width: 100%;
     background-color: #666;
     padding: 20px;
 }
@@ -207,10 +200,6 @@ ul.topnav.responsive li a {
     text-decoration: none;
     color: white;
     font-size: 16px;
-}
-
-#contact {
-    padding: 1px;
 }
 
 #contact h2 {
