@@ -65,8 +65,6 @@ ul.topnav li.dropdown{
     align-items: center;
     text-align: center;
     flex-direction: column;
-    padding: 0;
-    margin: 0;
 }
 
 #about h1{
@@ -140,7 +138,7 @@ ul.topnav li.dropdown{
     display: flex;
     gap: 20px;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     padding: 20px;
 }
 .icon-container a {
@@ -167,13 +165,7 @@ footer p {
 
 /* ############# Mobile ################# */
 
-@media only screen and (max-width: 510px) {
-    
-}
-
-
-
-@media only screen and (max-width: 680px) {
+@media  screen and (max-width: 780px) {
     ul.topnav li:not(:nth-child(1)) {
         display: none;
     }
