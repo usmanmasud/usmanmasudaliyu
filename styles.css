@@ -6,6 +6,7 @@ nav, header, footer {
 body{
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /* NAVIGATION BAR */
@@ -95,7 +96,7 @@ ul.topnav li.dropdown{
 
 .projects {
     display: grid;
-    gap: 40px;
+    gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 25px;
     padding: 20px;
@@ -109,7 +110,6 @@ ul.topnav li.dropdown{
     font-size: 25px;
     width: 400px;
     font-style: italic;
-    text-decoration: n;
 }
 
 .project a {
@@ -118,6 +118,7 @@ ul.topnav li.dropdown{
 }
 
 #contact {
+    width: 100%;
     background-color: #666;
     padding: 85px;
     text-align: center;
@@ -148,6 +149,7 @@ ul.topnav li.dropdown{
 }
 
 footer {
+    width: 100%;
     background-color: #666;
     padding: 20px;
 }
@@ -189,5 +191,45 @@ ul.topnav.responsive li a {
     display: block;
     text-align: left;
 }
+ 
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
 
+.project img {
+    width: 550px;
+}
+
+.project {
+    width: 550px;
+}
+
+.icon-container {
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.icon-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+#contact {
+    padding: 1px;
+}
+
+#contact h2 {
+    font-size: 30px;
+}
+
+#about {
+    height: 90vh;
+}
 }   
